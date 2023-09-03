@@ -37,3 +37,34 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+//****************** MEMORY STACK AND HEAP **************************/
+
+//Stack(For primitive type),Heap memory(for Non-primitive Type)
+
+let myName = "ARSHANSAIFI" //store in stack
+
+let anothername = myName; 
+console.log(anothername);//ouput as ARSHANSAIFI
+anothername = "ANAS";
+console.log(myName); //output as ARSHANSAIFI
+console.log(anothername); //output as ANAS
+
+/* Reason => a copy of myName is saved in anothername thats why when we reassigned anothername to "ANAS 
+The value of anothername changed but not of myName
+*/
+
+//non primitive dataType are stored in heap memory by reference
+let userOne ={
+    email:"admin@123",
+    upi:"pnb3"
+}
+
+let userTwo = userOne;
+userTwo.email = "info@gmail.com"  //the original value of userOne.email is also changed cuz they follow by reference
+
+console.log(userOne.email);//output info@gmail.com
+console.log(userTwo.email);//output info@gmail.com
