@@ -86,7 +86,7 @@ num1 = num2 = num3 = 2+2;
 console.table([num1,num2,num3])  //output 4,4,4
 
 let gameCounter = 2;
-++gameCounter; output 
+++gameCounter; //output 
 gameCounter++;
 
 console.log(gameCounter);
