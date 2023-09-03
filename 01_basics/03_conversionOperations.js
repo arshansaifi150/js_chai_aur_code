@@ -1,6 +1,6 @@
-// let score = 33;
-// console.log(typeof score);  output as number
-// console.log(typeof(score));
+// // let score = 33;
+// // console.log(typeof score);  output as number
+// // console.log(typeof(score));
 
 let score = "33" 
 let score2 = "33abc"
@@ -47,6 +47,49 @@ console.log(boolanConversion);
 let num = 33;
 let numToString = String(num);
 console.log(typeof numToString); //string output => 33
+
+
+
+/********************operations************ */
+
+let value = 3;
+let negValue = -value;
+console.log(negValue);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2);
+console.log(2/2);
+console.log(2%2);
+
+
+let str1 = "Hello";
+let str2 = " Arshan";
+let str3 = str1 + str2;
+console.log(str3); //output Hello Arshan 
+
+console.log("1" + 2); //output 12
+console.log(1 + "2"); //output 12
+console.log("1" + 2 + 2);//output 123
+console.log(1 + 2 +"2"); //output 32 => 1+2 and "2"get concatinated
+
+console.log(true);//output true
+console.log(+true); //output 1 
+
+console.log(+"");//output 0
+
+let num1 , num2, num3;
+
+num1 = num2 = num3 = 2+2;
+
+console.table([num1,num2,num3])  //output 4,4,4
+
+let gameCounter = 2;
+++gameCounter; output 
+gameCounter++;
+
+console.log(gameCounter);
 
 
 
