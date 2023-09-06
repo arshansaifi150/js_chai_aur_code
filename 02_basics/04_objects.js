@@ -62,17 +62,22 @@ const course = {
 }
 
 // course.courseInstructor
+//destructuring of Objects
 
 const {courseInstructor: instructor} = course
 
 // console.log(courseInstructor);
 console.log(instructor);
 
+//json structure
+
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
+
+//json in array format
 
 [
     {},
