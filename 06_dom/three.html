@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM chai</title>
+    <style>
+        .body{
+            background-color: #212121; color:#fff;
+        }
+    </style>
+</head>
+<body class="body">
+    
+</body>
+
+<script>
+    const div = document.createElement('div')
+    console.log(div)
+    div.className = 'main';
+    div.id = Math.round(Math.random()*10 + 1);
+    div.setAttribute('title','generated title')
+    div.style.backgroundColor = 'green';
+    div.style.padding = '12px';
+    div.innerText = 'Chai aur code';
+    div.style.textAlign = 'center'
+    const addText = document.createTextNode('chai aur code')
+
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
+
+    const addElement = (num) =>{
+        
+        for(let i = 0;i<num;i++){
+            let h1;
+            h1 = document.createElement(h1);
+            h1.className ='heading';
+            h1.style.color = 'white';
+            h1.style.backgroundColor= 'red';
+            h1.innerText = "javaScript"
+            h1.style.display = 'flex'
+            h1.style.justifyContent = 'center'
+            
+            document.body.appendChild(h1);
+        }
+    }
+    addElement(5);
+</script>
+</html>
