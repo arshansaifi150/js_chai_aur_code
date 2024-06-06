@@ -31,7 +31,10 @@ function User(username, loginCount, isLoggedIn){
     return this
 }
 
-const userOne = new User("hitesh", 12, true)
-const userTwo = new User("ChaiAurCode", 11, false)
+// const userOne =  User("hitesh", 12, true)
+// const userTwo =  User("ChaiAurCode", 11, false) //user two will overwrite user one 
+
+const userOne = new User("hitesh", 12, true) //new keyword creates a new instance/object
+const userTwo = new User("ChaiAurCode", 11, false)// now usertwo will not overwrite userone
 console.log(userOne.constructor);
 //console.log(userTwo);
